@@ -19,7 +19,7 @@ public class ContainerCellarShelf extends Container {
 	public ContainerCellarShelf(InventoryPlayer player, TECellarShelf tileEntity) {	
 		for(int y = 0; y < 2; y++) {
 			for(int x = 0; x < 7; x++) {
-				addSlotToContainer(new SlotCookableFoodOnly(tileEntity,
+				addSlotToContainer(new SlotChest(tileEntity,
 						x + (y * 7),		//Slot id
 						26 + (x * 18),		//Slot x
 						25 + (y * 18)		//Slot y
